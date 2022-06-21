@@ -16,12 +16,15 @@
             android:name=".PasswordActivity"
             android:exported="false" />
         <activity
+            android:label="Tambah Novel"
             android:name=".add_novel"
             android:exported="false" />
         <activity
+            android:label="Register"
             android:name=".Register"
             android:exported="false" />
         <activity
+            android:label="Halaman Beranda"
             android:name=".HomeActivity"
             android:exported="false" />
         <activity

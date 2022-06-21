@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.uaspam_041.database.DBLightNovel;
 import com.example.uaspam_041.database.DBRegisLog;
 
 public class PasswordActivity extends AppCompatActivity {

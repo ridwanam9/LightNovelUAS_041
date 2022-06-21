@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.uaspam_041.database.DBLightNovel;
 import com.example.uaspam_041.database.DBRegisLog;
 
 public class ResetActivity extends AppCompatActivity {

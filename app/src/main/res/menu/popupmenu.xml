@@ -5,4 +5,7 @@
     <item
         android:id="@+id/hapus"
         android:title="Hapus Novel" />
+    <item
+        android:id="@+id/simpan"
+        android:title="Simpan Novel" />
 </menu>

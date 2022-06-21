@@ -66,6 +66,10 @@ public class LNAdapter extends RecyclerView.Adapter<LNAdapter.LNViewHolder>{
                     @Override
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         switch (menuItem.getItemId()){
+                            case R.id.simpan:
+                                Toast.makeText(control.getApplicationContext(), "Novel berhasil disimpan", Toast.LENGTH_SHORT).show();
+                                break;
+
                             case R.id.hapus:
                                 HashMap<String,String> values = new HashMap<>();
                                 values.put("id_novel", id_novel);

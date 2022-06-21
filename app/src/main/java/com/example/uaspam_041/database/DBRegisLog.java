@@ -11,9 +11,7 @@ import androidx.annotation.Nullable;
 public class DBRegisLog extends SQLiteOpenHelper {
 
 
-    public static final String DBNAME = "Login.db";
-
-    public DBRegisLog(@Nullable Context context) {
+    public DBRegisLog(Context context) {
         super(context, "Login.db", null, 1);
     }
 

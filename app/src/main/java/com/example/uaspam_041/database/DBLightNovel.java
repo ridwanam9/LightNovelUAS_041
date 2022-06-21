@@ -16,7 +16,6 @@ import java.util.HashMap;
 
 public class DBLightNovel extends SQLiteOpenHelper{
 
-    public static final String DBNAME = "books.db";
 
     public DBLightNovel(Context context) {
         super(context, "books.db", null, 1);
@@ -28,9 +27,9 @@ public class DBLightNovel extends SQLiteOpenHelper{
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase bookstore, int i, int i1) {
-        bookstore.execSQL("drop table if exists book");
-        onCreate(bookstore);
+    public void onUpgrade(SQLiteDatabase MyDB, int i, int i1) {
+        MyDB.execSQL("drop table if exists book");
+        onCreate(MyDB);
     }
 
     public void insertBook(HashMap<String,String> queryValues){
@@ -63,7 +62,6 @@ public class DBLightNovel extends SQLiteOpenHelper{
         bookstore.close();
         return daftarLightNovel;
     }
-
 
     public void deleteData(HashMap<String,String> queryValue){
         SQLiteDatabase bookstore = getWritableDatabase();

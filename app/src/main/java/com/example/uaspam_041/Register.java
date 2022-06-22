@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
                             boolean insert = DB.insertData(rnama,remail,rpass);
                             if (insert==true){
                                 Toast.makeText(getApplicationContext(),
-                                        "Nama Anda: "+rnama+". Email Anda: "+remail+". Password Anda: "+rpass, Toast.LENGTH_LONG).show();
+                                        "Registrasi Berhasil", Toast.LENGTH_LONG).show();
                                 Intent Register_toMain = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(Register_toMain);
                             }
@@ -67,6 +67,9 @@ public class Register extends AppCompatActivity {
                             Intent Register_toMain = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(Register_toMain);
                         }
+                    }else
+                    {
+                    Toast.makeText(getApplicationContext(), "Password Tidak Cocok", Toast.LENGTH_LONG).show();
                     }
                 }
             }
